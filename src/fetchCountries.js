@@ -5,7 +5,7 @@ const searchParams = new URLSearchParams({
 });
 
 export default function fetchCountries(name) {
-  return fetch(`${URL}${name}?${searchParams}`)
-    .then(response => response.json())
-    .then(data => data);
+  return fetch(`${URL}${name}?${searchParams}`).then(response =>
+    response.json()
+  );
 }
