@@ -43,7 +43,6 @@ function onInputChange(e) {
         resetCardContent();
         refs.countriesList.innerHTML = createListMarkup(data);
 
-
         return;
       }
 
