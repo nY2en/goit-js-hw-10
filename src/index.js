@@ -19,6 +19,7 @@ function onInputChange(e) {
   if (!searchQuerry) {
     resetUlContent();
     resetCardContent();
+    
     return;
   }
 
@@ -41,11 +42,10 @@ function onInputChange(e) {
       if (data.length !== 1) {
         resetCardContent();
         refs.countriesList.innerHTML = createListMarkup(data);
-        
+
 
         return;
       }
-
 
       resetUlContent();
       refs.countryInfo.innerHTML = createCardMarkup(data);
